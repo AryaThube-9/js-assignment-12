@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn {
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        width: 200px;
+        margin-left: 40px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <img src="./images/off-light.png" id="bulb" alt="image" height="300px">
+    <br><br>
+    <button type="button" onclick="toggleButton()" class="btn">Toggle</button>
+    <script>
+        const bulbEle = document.getElementById("bulb");
+
+        let state = false;
+
+        function toggleButton() {
+            if (state == true) {
+                bulbEle.src = "./images/on-light.png";
+                state = false;
+            }
+            else {
+                bulbEle.src = "./images/off-light.png";
+                state = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
