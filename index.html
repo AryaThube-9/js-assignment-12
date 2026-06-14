@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +16,13 @@
         cursor: pointer;
     }
 </style>
-
 <body>
     <img src="./images/off-light.png" id="bulb" alt="image" height="300px">
     <br><br>
     <button type="button" onclick="toggleButton()" class="btn">Toggle</button>
     <script>
         const bulbEle = document.getElementById("bulb");
-
         let state = false;
-
         function toggleButton() {
             if (state == true) {
                 bulbEle.src = "./images/on-light.png";
@@ -39,5 +35,4 @@
         }
     </script>
 </body>
-
 </html>
